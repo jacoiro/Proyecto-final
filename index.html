@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedorDatos">
+        <img src="" alt="Foto de perfil" id="foto">
+        <h2>Nombre: <span id="nombre"> </span></h2>
+        <div>
+            <p>Correo: <span id="email"></span></p>
+            <p>Teléfono: <span id="telefono"></span></p>
+        </div>      
+    </div>
+
+    <div class="menu">
+        <button type="button" onclick="document.getElementById('datosPersonales').style.display='block', document.getElementById('habilidades').style.display='none',document.getElementById('experiencia').style.display='none'">Ver datos</button>
+        <button type="button" onclick="document.getElementById('experiencia').style.display='block', document.getElementById('habilidades').style.display='none',document.getElementById('datosPersonales').style.display='none'">Ver experiencia</button>
+        <button type="button" onclick="document.getElementById('habilidades').style.display='block' ,document.getElementById('experiencia').style.display='none',document.getElementById('datosPersonales').style.display='none'">Ver habilidades</button>
+
+    </div>
+    
+    <! ––Datos ficticios extraídos de: https://www.tiemposmodernos.eu/recursos-fol-ejemplos-de-cv/#:~:text=Contiene%20todos%20sus%20datos%20personales,a%20la%20que%20quiero%20acceder. -->
+    <div class="contenedor" id="datosPersonales" style="display:none">
+        <h1>Datos Personales</h1>
+        <ul>
+            <li>Nombre Completo: <span id="nombreCompleto"></span></li>
+            <li>Domicilio: <span id="domicilio"></span></li>
+            <li>Edad: <span id="edad"></span></li>
+            <li>Celular: <span id="celular"></span></li>
+        </ul>
+    </div>
+    <div class="contenedor" id="experiencia" style="display:none">
+        <h1>Experiencia</h1>
+        <ul>
+            
+            
+            <li> <abbr title="Realizaba tareas relacionadas con el control de inventario y stock de repuestos, y me encontraba a cargo de un equipo de seis mecánicos">
+                Concesionario “Mercedes Benz” España, sede de Málaga Jefe de Taller Febrero 2013 - Actualidad</abbr></li>
+            <li> <abbr title="Estas prácticas significaron mi ingreso al mercado laboral">
+                Prácticas educativas (Formación en Centros de Trabajo) Erasmus en Mercedes-Benz en Stuttgart (Alemania) 2012</abbr></li>
+        </ul>
+    </div>
+    <div class="contenedor" id="habilidades" style="display:none">
+        <h1>Habilidades</h1>
+        <ul>
+            <li>Permiso de Conducir tipo B, y coche propio.</li>
+            <li>Disponibilidad horaria.</li>
+        </ul>
+    </div>
+
+
+    <script src="funciones.js"></script>
+</body>
+</html>
